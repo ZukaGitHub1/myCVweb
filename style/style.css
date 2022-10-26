@@ -261,7 +261,15 @@ main{
 }
 .skills{
     background-color: #e2e2e2;
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
 }
+  .skills.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
 .skill-type{
     width: 100%;
     gap: 10%;
